@@ -16,10 +16,3 @@ This repository contains R scripts for data processing, merging, and visualizati
 
 ### **1. Uploading Morphometric Data**
 Ensure you have the required libraries installed:  
-```r
-library(readxl)
-library(tidyverse)
-df <- read_excel("Indici-morfometrici.xlsx")
-colnames(df) <- df[1, ] 
-df <- df[-1, ]  
-head(df)
