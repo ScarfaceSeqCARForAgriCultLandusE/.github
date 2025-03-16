@@ -1,0 +1,150 @@
+---
+title: "Municipal Data (2022)"
+author: "Pietro Colombo"
+date: "`r 13/03/2025`"
+format: html
+---
+
+# **Municipal Data Analysis (2022)**
+
+## **1. General Municipality Data**
+
+The dataset provides details about different municipalities, including population, land, and water areas.
+
+### **Columns:**
+
+-   **COD RIP, COD REG, COD PROV, COD COM**: Coded identifiers for territorial divisions.
+-   **COMUNE**: Municipality name.
+-   **POP 31/12/2022**: Population count as of December 31, 2022.
+-   **SUP 31/12/2022 (Ha)**: Total land area in hectares.
+-   **SUP ACQUE (Ha)**: Water area in hectares.
+
+### **Example Data:**
+
+| Municipality    | Population | Land Area (Ha) | Water Area (Ha) |
+|-----------------|------------|----------------|-----------------|
+| Agliè           | 2,562      | 1,314.6        | 1.8             |
+| Airasca         | 3,660      | 1,573.9        | 0.0             |
+| Ala di Stura    | 467        | 4,633.2        | 11.0            |
+| Albiano d'Ivrea | 1,637      | 1,173.1        | 0.0             |
+
+## **2. Terrain Steepness (Slope) Classification**
+
+The dataset categorizes land steepness into five slope classes:
+
+-   **MOLTO BASSA (Very Low Slope)**
+-   **BASSA (Low Slope)**
+-   **MEDIA (Medium Slope)**
+-   **ALTA (High Slope)**
+-   **MOLTO ALTA (Very High Slope)**
+
+### **Example Slope Distribution:**
+
+| Municipality    | Very Low (%) | Low (%) | Medium (%) | High (%) | Very High (%) |
+|-----------------|--------------|---------|------------|----------|---------------|
+| Agliè           | 26.2         | 49.83   | 15.8       | 6.6      | 1.6           |
+| Airasca         | 47.0         | 50.93   | 2.1        | 0.0      | 0.0           |
+| Ala di Stura    | 0.1          | 1.29    | 6.1        | 23.1     | 69.5          |
+| Albiano d'Ivrea | 48.4         | 43.05   | 7.4        | 1.1      | 0.0           |
+
+## **3. Terrain Roughness (Rugosità)**
+
+Roughness is measured using: - **STD SLOPE**: Standard deviation of slope. - **STD TRI**: Terrain roughness index.
+
+Both are classified into quintiles: - **BASSA (Low Roughness)** - **MOLTO BASSA (Very Low Roughness)** - **MOLTO ALTA (Very High Roughness)**
+
+### **Example Roughness Data:**
+
+| Municipality    | STD SLOPE | Slope Definition | STD TRI | TRI Definition |
+|-----------------|-----------|------------------|---------|----------------|
+| Agliè           | 4.31      | BASSA            | 5.8     | BASSA          |
+| Airasca         | 1.20      | MOLTO BASSA      | 1.5     | MOLTO BASSA    |
+| Ala di Stura    | 9.47      | MOLTO ALTA       | 16.5    | MOLTO ALTA     |
+| Albiano d'Ivrea | 2.17      | BASSA            | 2.8     | BASSA          |
+
+## **4. Key Insights**
+
+-   **Ala di Stura** has the steepest and roughest terrain, with 69.5% in "very high slope" and "very high roughness."
+-   **Airasca** is the flattest municipality, with nearly all land in "very low" or "low" slope categories.
+-   **Agliè** and **Albiano d'Ivrea** have moderate terrain features with mostly gentle slopes and low roughness.
+
+This dataset provides valuable insights for urban planning, agriculture, and environmental assessment.
+
+------------------------------------------------------------------------
+
+## Upload Dati morfometrici
+
+```{r,message=FALSE, warning=FALSE, echo=FALSE}
+library(readxl)
+library(tidyverse)
+#https://www.istat.it/statistica-sperimentale/indici-per-la-descrizione-morfometrica-del-territorio-italiano/
+df<- read_excel("Indici-morfometrici (3).xlsx")
+colnames(df) <- df[1, ] 
+df <- df[-1, ]  
+#rownames(df) <- NULL
+#head(df)
+head(df)
+```
+
+Upload shapefile and sorting operations
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+
+#install.packages("leaflet")
+#install.packages("sf")
+#install.packages("giscoR")  # To get municipality data
+library(giscoR)
+library(leaflet)
+library(sf)
+#https://public.opendatasoft.com/explore/dataset/georef-italy-comune/export/?utm_source=chatgpt.com&disjunctive.rip_code&disjunctive.rip_name&disjunctive.reg_code&disjunctive.reg_name&disjunctive.prov_code&disjunctive.prov_name&disjunctive.com_code&disjunctive.com_name&sort=year&location=6,42.66628,16.33667&basemap=jawg.light
+# Define the path to your shapefile
+shapefile_path <- "C:/Users/2692812C/OneDrive - University of Glasgow/Desktop/Projects/8 Scarface/georef-italy-comune/georef-italy-comune-millesime.shp"
+# Load the shapefile
+italy_comuni <- st_read(shapefile_path)
+head(italy_comuni)
+
+# Sort the shapefile dataset by municipality name
+shapefile_data_sorted <- italy_comuni %>%
+  arrange(com_name)  
+colnames(df) <- make.unique(colnames(df))
+
+df_sorted <- df %>%
+  arrange(COMUNE)  # Sorting after fixing duplicate names
+```
+
+Plotting the data
+
+```{r}
+# Your R code here
+library(dplyr)
+# Ensure Municipality Names are Cleaned Before Merging
+df_sorted <- df_sorted %>%
+  mutate(COMUNE_clean = tolower(trimws(COMUNE)))
+shapefile_data_sorted <- shapefile_data_sorted %>%
+  mutate(com_name_clean = tolower(trimws(com_name)))
+# Merge Based on Municipality Names
+merged_data <- left_join(shapefile_data_sorted, df_sorted, 
+                         by = c("com_name_clean" = "COMUNE_clean"))
+
+# View any municipalities that did not match
+unmatched <- anti_join(shapefile_data_sorted, df_sorted, by = c("com_name_clean" = "COMUNE_clean"))
+
+head(merged_data)
+str(merged_data)
+merged_data$`% in ALTA`=as.numeric(merged_data$`% in ALTA`)
+# Step 4: Define a Color Palette for % in ALTA
+color_palette <- colorNumeric(palette = "YlOrRd", domain = merged_data$`% in ALTA`, na.color = "gray")
+
+leaflet(data = merged_data) %>%
+  addTiles() %>%
+  addPolygons(fillColor = ~color_palette(`% in ALTA`),  # Color by steepness
+              color = "black", weight = 0.5, opacity = 0.7,
+              label = ~paste(com_name, ": ", `% in ALTA`, "%"),
+              fillOpacity = 0.7) %>%
+  addLegend(pal = color_palette, values = merged_data$`% in ALTA`,
+            title = "% in ALTA", opacity = 1)
+
+
+```
+
+# 
