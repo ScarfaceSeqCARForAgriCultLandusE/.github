@@ -78,7 +78,7 @@ This dataset provides valuable insights for urban planning, agriculture, and env
 library(readxl)
 library(tidyverse)
 #https://www.istat.it/statistica-sperimentale/indici-per-la-descrizione-morfometrica-del-territorio-italiano/
-df<- read_excel("Indici-morfometrici (3).xlsx")
+df<- read_excel("Data/DatiMorfometrici/MorfologicData_com_2022.xlsx")
 colnames(df) <- df[1, ] 
 df <- df[-1, ]  
 #rownames(df) <- NULL
@@ -96,7 +96,7 @@ Upload shapefile and sorting operations
 library(giscoR)
 library(leaflet)
 library(sf)
-#https://public.opendatasoft.com/explore/dataset/georef-italy-comune/export/?utm_source=chatgpt.com&disjunctive.rip_code&disjunctive.rip_name&disjunctive.reg_code&disjunctive.reg_name&disjunctive.prov_code&disjunctive.prov_name&disjunctive.com_code&disjunctive.com_name&sort=year&location=6,42.66628,16.33667&basemap=jawg.light
+#https://public.opendatasoft.com/explore/dataset/georef-italy-comune/export/?#disjunctive.rip_code&disjunctive.rip_name&disjunctive.reg_code&disjunctive.reg_name&disjunctive.prov_code&disjunctive.prov_name&disjunctive.com_c#ode&disjunctive.com_name
 # Define the path to your shapefile
 shapefile_path <- "C:/Users/2692812C/OneDrive - University of Glasgow/Desktop/Projects/8 Scarface/georef-italy-comune/georef-italy-comune-millesime.shp"
 # Load the shapefile
