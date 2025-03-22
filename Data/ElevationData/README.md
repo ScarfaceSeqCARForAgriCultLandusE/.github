@@ -16,3 +16,7 @@
 | `STD`                 | Standard deviation of elevation values (terrain variability indicator)      |
 | `com_code`            | Character version of `PRO_COM`, zero-padded to 6 digits (used for merging)  |
 
+
+![Alt text](AltitudePng.png)
+
+
