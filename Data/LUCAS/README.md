@@ -61,6 +61,8 @@ This dataset is suitable for:
 - Environmental modeling and agronomic zoning
 
 ---
+## Map of the data
+![LUCAS 2018 Soil Texture Points in Northern Italy](LucasIT.png)
 
 ## Citation
 
