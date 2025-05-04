@@ -45,5 +45,5 @@ The dataset provides air pollutant concentration grids across Europe using a *re
 To standardize and clean the metadata, an R script is provided. You can run it using:
 
 ```bash
-Rscript scripts/preprocess_metadata.R
+Rscript scripts/processing_EEA_data.R
 
