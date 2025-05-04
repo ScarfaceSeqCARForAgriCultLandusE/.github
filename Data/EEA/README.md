@@ -2,8 +2,8 @@
 
 This repository contains processed and raw data derived from the **European Air Quality Interpolated Data** provided by the European Environment Agency (EEA).
 
-📅 **Published**: 05 June 2024  
-🛠 **Last Modified**: 02 April 2025  
+📅 **Published**:  
+🛠 **Last Modified**: 05 April 2025  
 🔗 **Original Source**: [EEA Datahub Item](https://www.eea.europa.eu/en/datahub/datahubitem-view/82700fbd-2953-467b-be0a-78a520c3a7ef)
 
 ## 📦 Dataset Description
