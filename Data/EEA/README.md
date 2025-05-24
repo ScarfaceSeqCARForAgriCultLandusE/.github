@@ -1,4 +1,4 @@
-# European Air Quality Data Repository For Lombardia, Emilia Romagna, and Piemonte
+# European Air Quality Data Repository For Lombardia, Emilia Romagna, Piemonte and Veneto
 
 This repository contains processed and raw data derived from the **European Air Quality Interpolated Data** provided by the European Environment Agency (EEA).
 
