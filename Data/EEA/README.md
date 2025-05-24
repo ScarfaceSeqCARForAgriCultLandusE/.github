@@ -15,6 +15,9 @@ The dataset provides air pollutant concentration grids across Europe using a *re
 **For Human Health:**
 - PM10 (Annual average, 90.4 percentile of daily means)
 - PM2.5 (Annual average)
+
+The next variables are considered only for Lombardy, Piedmont and Emilia Romagna
+-------------------------------------------------------------------------------
 - Ozone:
   - 93.2 percentile of maximum daily 8-hour means
   - SOMO35, SOMO10
