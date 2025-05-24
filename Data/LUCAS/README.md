@@ -1,4 +1,4 @@
-# LUCAS 2018 Soil Texture Data — Lombardy, Emilia-Romagna, and Piedmont
+# LUCAS 2018 Soil Texture Data — Lombardy, Emilia-Romagna, Piedmont and Veneto
 
 📅 **Date of Extraction**: 10 March 2025  
 📂 **Source file**: `LUCAS_Text_All_10032025.shp`  
