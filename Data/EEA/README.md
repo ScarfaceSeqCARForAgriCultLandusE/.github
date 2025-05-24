@@ -42,9 +42,10 @@ The dataset provides air pollutant concentration grids across Europe using a *re
 
 - `/scripts`  
   - `preprocess_metadata.R`: R script for preprocessing the metadata and preparing it for further analysis or integration. The R script needs to be run locally when the data have been downloaded, and the directory need to be changed.
- 
+
+---
 ## Plot Of The PM10 data
-![PM10](Data/EEA/Pm10_rasterPlot.png)
+![PM10](PM25_Data/Pm10_rasterPlot.png)
 
 
 ## 🧪 Preprocessing
