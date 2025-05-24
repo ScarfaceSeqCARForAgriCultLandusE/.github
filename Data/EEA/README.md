@@ -45,7 +45,7 @@ The dataset provides air pollutant concentration grids across Europe using a *re
 
 ---
 ## Plot Of The PM10 data
-![PM10](PM25_Data/Pm10_rasterPlot.png)
+![PM10](Pm10_rasterPlot.png)
 
 
 ## 🧪 Preprocessing
