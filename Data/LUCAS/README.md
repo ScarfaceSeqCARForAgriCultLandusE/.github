@@ -12,7 +12,7 @@
 
 This dataset is a filtered subset of the full LUCAS SOIL campaigns shapefile, including only:
 
-- Points located in **Lombardy, Emilia-Romagna, and Piedmont**
+- Points located in **Lombardy, Emilia-Romagna, Piedmont and Veneto**
 - Points where a **soil sample was collected during the 2018 campaign**
 - Points where **textural (particle size distribution)** data are available (i.e., clay, silt, sand)
 
