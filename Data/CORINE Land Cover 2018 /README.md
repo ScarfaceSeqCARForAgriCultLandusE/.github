@@ -1,4 +1,4 @@
 # Corine data are to big.
 
-![Alt text](CORINE Land Cover.png)
+![Alt text](CorineLandCover.png)
 
