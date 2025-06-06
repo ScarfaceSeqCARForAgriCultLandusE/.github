@@ -1,7 +1,9 @@
 # 📊 README – Local Indicators from *A misura di Comune*  
-**Update: December 2021**
+**Update: June 2025**
 
-This dataset provides a comprehensive collection of **statistical indicators** at the **municipal, provincial, and regional** levels in Italy. It is part of the *A misura di Comune* system, which integrates both traditional and experimental data sources to support the planning, programming, and management activities of local authorities. The years consider range from 2014 up to 2021
+This dataset provides a comprehensive collection of **statistical indicators** at the **municipal, provincial, and regional** levels in Italy. It is part of the *A misura di Comune* system, which integrates both traditional and experimental data sources to support the planning, programming, and management activities of local authorities. The years consider range from 2014 up to 2021.
+Official website [ISTAT](https://www.istat.it/statistica-sperimentale/aggiornamento-degli-indicatori-del-sistema-informativo-a-misura-di-comune/)
+
 
 ---
 
