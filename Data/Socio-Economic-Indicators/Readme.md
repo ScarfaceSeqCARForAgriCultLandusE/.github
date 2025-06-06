@@ -1,95 +1,85 @@
 # 📊 README – Local Indicators from *A misura di Comune*  
 **Update: December 2021**
 
-This dataset provides a comprehensive collection of **statistical indicators** at the **municipal, provincial, and regional** levels in Italy. It is part of the *A misura di Comune* system, which integrates both traditional and experimental data sources to support the planning, programming, and management activities of local authorities.
+This dataset provides a comprehensive collection of **statistical indicators** at the **municipal, provincial, and regional** levels in Italy. It is part of the *A misura di Comune* system, which integrates both traditional and experimental data sources to support the planning, programming, and management activities of local authorities. The years consider range from 2014 up to 2021
 
 ---
 
-## 📁 Included Files (by Theme)
+## 📁 Dataset Structure
 
-### 🧍 Population
-- `1a – Population: Absolute Values (xlsx, 2.7 MB)`
-- `1b – Population Distribution by Age – 2014–2017 (xlsx, 4.9 MB)`
-- `1b – Population Distribution by Age – 2018–2021 (xlsx, 4.9 MB)`
-- `1c – Demographic Indicators (xlsx, 3.7 MB)`
-- `1d – Population Structure Indicators (xlsx, 3.5 MB)`
-- `1e – Average Age of Population (xlsx, 2.9 MB)`
+Each row represents a unique municipality (`Codice comune Istat`) in a specific year.
 
-### 🏠 Households
-- `2 – Households (xlsx, 5.6 MB)`
+### 🗺️ Geographical and Administrative Variables
+
+| Variable Name             | Description |
+|--------------------------|-------------|
+| `Geographical Division`  | Broad geographical area (e.g., North, South, Islands) |
+| `Region Code`            | Numeric code identifying the region |
+| `Region Name`            | Full name of the region |
+| `Province`               | Name of the province |
+| `Provincial Capital`     | Indicates if the municipality is a provincial capital |
+| `Municipality Name`      | Full name of the municipality |
+| `Codice comune Istat`    | Unique identifier for each municipality (ISTAT code) |
+| `year`                   | Year of observation |
 
 ### 🎓 Education
-- `3 – Education (xlsx, 1.1 MB)`
 
-### 💼 Employment
-- `4 – Employment (xlsx, 2.5 MB)`
+| Variable Name                            | Description |
+|------------------------------------------|-------------|
+| `Males incidence tertiary education`     | Percentage of males with tertiary education |
+| `Females incidence tertiary education`   | Percentage of females with tertiary education |
 
-### 💰 Economic Well-being
-- `5 – Economic Well-being (xlsx, 3.6 MB)`
+### 👶👵 Demographic Age Groups
 
-### 🏛️ Politics and Institutions
-- `6 – Politics and Institutions (xlsx, 3.2 MB)`
+| Variable Name    | Description |
+|------------------|-------------|
+| `Age 0-3`        | Population aged 0–3 |
+| `Age 4-5`        | Population aged 4–5 |
+| `Age 6-10`       | Population aged 6–10 |
+| `Age 11-14`      | Population aged 11–14 |
+| `Age 15-17`      | Population aged 15–17 |
+| `Age 18-19`      | Population aged 18–19 |
+| `Age 20-29`      | Population aged 20–29 |
+| `Age 30-59`      | Population aged 30–59 |
+| `Age 60-64`      | Population aged 60–64 |
+| `Age 65-84`      | Population aged 65–84 |
+| `Age 85+`        | Population aged 85 and older |
 
-### 🎭 Culture
-- `7 – Culture (xlsx, 2 MB)`
+### 💶 Economic Indicators
 
-### 🚺 Gender Issues
-- `8a – Gender Issues: Education (xlsx, 2.3 MB)`
-- `8b – Gender Issues: Employment (xlsx, 2 MB)`
-- `8c – Gender Issues: Demographic and Social Spending Indicators (xlsx, 0.8 MB)`
-- `8d – Gender Issues: Employees (xlsx, 4.2 MB)`
-- `8d – Gender Issues: Employees by Working Hours (xlsx, 3.9 MB)`
-- `8d – Gender Issues: Employees by Contract Type (xlsx, 3.9 MB)`
+| Variable Name                     | Description |
+|----------------------------------|-------------|
+| `Income`                         | Average or median income (units and methodology may vary) |
+| `Established Economy Index`      | Composite index representing economic development or stability |
+| `Agricultural-Manufacturing Activity` | Share of economic activity in agriculture and manufacturing |
+| `Extractive Industry`            | Economic activity related to mining or resource extraction |
+| `Manufacturing Industry`         | Share of manufacturing industry activity |
+| `Construction`                   | Share of economic activity from construction sector |
+| `Business Services`              | Includes finance, consulting, IT, etc. |
+| `Social Services`                | Education, health care, and other public services |
+| `Consumer Services`              | Retail, hospitality, and other consumer-facing industries |
+| `Traditional Services`           | Cultural, recreational, or legacy service sectors |
 
-### 🧑‍⚕️ Social Spending
-- `9a – Social Spending by User Type (xlsx, 5.1 MB)`
-- `9b – Social Spending per Inhabitant (xlsx, 1.2 MB)`
+### 💸 Social Indicators
 
-### 🌍 Territory and Environment
-- `10 – Territory and Environment (xlsx, 3.3 MB)`
+| Variable Name         | Description |
+|-----------------------|-------------|
+| `Social Spending`     | Social welfare expenditure per capita or in relation to municipal income |
 
-### 🏢 Local Economy
-- `11a – Local Economy: Characteristic Ratios (xlsx, 3.3 MB)`
-- `11b – Local Economy: Localization Quotients (xlsx, 6.7 MB)`
-- `11c – Local Economy: Local Units by Activity Sector (xlsx, 5.4 MB)`
-- `11d – Local Economy: Employees by Activity Sector (xlsx, 6.7 MB)`
-- `11e – Local Economy: Nonprofit Institutions (xlsx, 0.6 MB)`
+### 🚗 Public Safety
 
-### 🔬 Research and Innovation
-- `12 – Research and Innovation (xlsx, 3.3 MB)`
-
-### 🚉 Infrastructure and Mobility
-- `13 – Infrastructure and Mobility (xlsx, 3.3 MB)`
-
----
-
-## 📄 Supporting Documents
-
-- `Index of Statistical Tables (pdf)`
-- `Methodological Note (pdf)`
-- `Project Overview Sheet (pdf)`
+| Variable Name              | Description |
+|----------------------------|-------------|
+| `Car Accident Rate`        | Number of car accidents per capita or per vehicle |
+| `Road Accident Death Rate` | Number of fatalities per 100,000 inhabitants (or per accident) |
 
 ---
 
 ## 📌 Notes
 
-- Data are provided for **municipalities with more than 5,000 inhabitants**.
-- Aggregated data for **provinces**, **regions**, and **Italy** refer to these municipalities only.
-- The administrative and territorial framework refers to **December 31, 2021**.
-- Most indicators are presented in a **time series starting from 2014**.
-
+- **Data Source**: See official documentation or data provider's portal for precise definitions, collection methods, and update frequency.
+- **Data Types**: Most variables are numeric, but some categorical (e.g., region names).
 ---
 
-## 📚 Source and Background
 
-These indicators are part of the *A misura di Comune* initiative, developed under an agreement between:
 
-- **Istat** (Italian National Institute of Statistics)
-- **ANCI** (National Association of Italian Municipalities)
-- **UPI** (Union of Italian Provinces)
-
-The project promotes the development of **integrated, harmonized territorial information systems**, leveraging **Open Data** from other Sistan entities such as the Ministry of the Interior, Ministry of Economy and Finance, Ministry of Economic Development, and ISPRA.
-
-Experimental data from the **ARCH.I.M.E.DE. project** are also included, notably from the "Socio-economic conditions of families" database.
-
----
