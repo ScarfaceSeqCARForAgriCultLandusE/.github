@@ -6,13 +6,16 @@ This repository supports the SCARFACE project, which focuses on evaluating carbo
 
 - `Animals/`: Contains animal population and breeding data at the municipal level. Original and processed data are provided at yearly frequency. 
 - `CORINE Land Cover 2018/`: . The dataset land cover as 100 m raster data of 2018 reference year.   .
-- `EEA/`  Aggiungi risoluzione spaziale e temporale.:  
+- `EEA/`  Aggiungi risoluzione spaziale e temporale.:
+- `EDGAR Emissions/`: Contains spatio-temporal datasets from the Emissions Database for Global Atmospheric Research (EDGAR) of European Commission. Edgar provides data on annual emissions of greenhouse gasses and pollutants on a regular 0.1 x 0.1 grid worldwide.  Emission refer to either total human activities and sector specific activity agricolture and livestock.  
 - `ElevationData/`: Includes elevation models and altitude-related data.
+-  `Metereology`/ : Data from ECMWF, on a regular 0.1 x 0.1 grid.
 - `LAU PO Valley Metadata/`: Meta data of the municipality.
-- `European Drought Observatory/`: Contains morphometric indicators (e.g., slope, roughness) and geographic information from ISTAT.
+- `European Drought Observatory/`: Contains morphometric indicators (e.g., slope, roughness) and geographic information from ISTAT (to be organised)
 - `LUCAS/`: Restructured contents from earlier folder arrangements.
 - `MorfometricData`: Visual representation of altitude data.
 - `Socio-Economic-Indicators`: Spreadsheet with altitude values by municipality.
+
 
 ## 🔗 Data Sources
 
@@ -35,6 +38,9 @@ The data included in this repository comes from trusted institutional sources:
   
 - **European Drought Observatory**
 [https://drought.emergency.copernicus.eu/]
+
+- **EDGAR**
+  [https://edgar.jrc.ec.europa.eu/dataset_ghg2024#p3]
 
 
 ## 🛠 How to Use the Code
