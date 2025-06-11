@@ -8,6 +8,7 @@ This repository supports the SCARFACE project, which focuses on evaluating carbo
 - `CORINE Land Cover 2018/`: . The dataset land cover as 100 m raster data of 2018 reference year.   .
 - `EEA/`  Aggiungi risoluzione spaziale e temporale.:  
 - `ElevationData/`: Includes elevation models and altitude-related data.
+- `LAU PO Valley Metadata/`: Meta data of the municipality.
 - `European Drought Observatory/`: Contains morphometric indicators (e.g., slope, roughness) and geographic information from ISTAT.
 - `LUCAS/`: Restructured contents from earlier folder arrangements.
 - `MorfometricData`: Visual representation of altitude data.
