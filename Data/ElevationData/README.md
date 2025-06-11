@@ -1,10 +1,17 @@
+# Dataset Description: Livestock Counts by Municipality and Year
 
-## **Data Sources**  
-The datasets used in this project are sourced from:  
-- **ISTAT**: [https://www.istat.it/classificazione/principali-statistiche-geografiche-sui-comuni/)  
+## Overview
+
+For the purpose of providing a statistical description of the geographical characteristics of the territory, Istat disseminates analyses based on territorial bases and the digital elevation model (DEM) of the main territorial units relevant to official statistics
+
+## Structure Pigs
+
+- **Rows**: 895 obs
+- **Columns**: 27 columns
+- **Format**: `tibble` (R `tbl_df`, `data.frame`)
 
 
-### Variable Descriptions
+###Some Variable Descriptions
 
 | Variable              | Description                                                                 |
 |-----------------------|-----------------------------------------------------------------------------|
@@ -21,7 +28,14 @@ The datasets used in this project are sourced from:
 | `STD`                 | Standard deviation of elevation values (terrain variability indicator)      |
 | `com_code`            | Character version of `PRO_COM`, zero-padded to 6 digits (used for merging)  |
 
+## Notes
 
-![Alt text](AltitudePng.png)
+- The datasets are provided given rds and csv formats.
+- The additional lengths in rows is due to the presence of some more municipalities.
+
+
+### Example plot
+
+![Alt text](Rplot.png)
 
 
