@@ -5,26 +5,13 @@ This repository supports the SCARFACE project, which focuses on evaluating carbo
 ## 📁 Repository Structure
 
 - `Animals/`: Contains animal population and breeding data at the municipal level.
-- `AnimalsBreedingFactoriesData/`: Contains additional data and documentation about livestock farming and breeding facilities.
-- `Counts/`: Aggregated counts of animals by category or location.
+- `CORINE Land Cover 2018/`: Contains additional data and documentation about livestock farming and breeding facilities.
+- `EEA/`: Aggregated counts of animals by category or location.
 - `ElevationData/`: Includes elevation models and altitude-related data.
-- `MorfometricData/`: Contains morphometric indicators (e.g., slope, roughness) and geographic information from ISTAT.
-- `FolderReorganized/`: Restructured contents from earlier folder arrangements.
-- `AltitudePng.png`: Visual representation of altitude data.
-- `Altitude_com.xlsx`: Spreadsheet with altitude values by municipality.
-- `MorfometricData_com_2022.xlsx`: Morphometric indices by municipality for 2022.
-- `MorfometricDataView.qmd`: Quarto document for viewing or analyzing morphometric data.
-
-## 📌 Project Overview
-
-This repository gathers and harmonizes data related to:
-
-- Livestock farming intensity and distribution.
-- Terrain morphology and elevation.
-- Land cover and land use.
-- Agricultural practices relevant to carbon sequestration.
-
-The primary objective is to construct a spatial and temporal database to support the identification of areas in the Po Valley with either critical environmental issues or strong agricultural performance.
+- `European Drought Observatory/`: Contains morphometric indicators (e.g., slope, roughness) and geographic information from ISTAT.
+- `LUCAS/`: Restructured contents from earlier folder arrangements.
+- `MorfometricData`: Visual representation of altitude data.
+- `Socio-Economic-Indicators`: Spreadsheet with altitude values by municipality.
 
 ## 🔗 Data Sources
 
@@ -41,13 +28,3 @@ The data included in this repository comes from trusted institutional sources:
 
 ## 🛠 How to Use the Code
 
-This repository includes R scripts and Quarto documents for:
-
-- Loading and cleaning data from ISTAT, Eurostat, and Vetinfo.
-- Merging datasets with geographical shapefiles.
-- Producing visualizations of terrain, livestock density, and municipal metrics.
-
-Before running the scripts, ensure the following R packages are installed:
-
-```r
-install.packages(c("tidyverse", "sf", "readxl", "ggplot2", "raster"))
