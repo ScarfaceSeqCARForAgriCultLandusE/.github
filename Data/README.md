@@ -32,7 +32,7 @@ The data included in this repository comes from trusted institutional sources:
 - **European Environmental Agency**
   [https://www.eea.europa.eu/en/datahub/datahubitem-view/82700fbd-2953-467b-be0a-78a520c3a7ef ]
   
--**European Drought Observatory**
+- **European Drought Observatory**
 [https://drought.emergency.copernicus.eu/]
 
 
