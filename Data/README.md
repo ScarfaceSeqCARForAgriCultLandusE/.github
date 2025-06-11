@@ -26,5 +26,15 @@ The data included in this repository comes from trusted institutional sources:
 - **Veterinary National Database (Vetinfo)**  
   [https://www.vetinfo.it/j6_statistiche/](https://www.vetinfo.it/j6_statistiche/)
 
+- **Copernicus Land Cover**
+[https://land.copernicus.eu/en/products/corine-land-cover?tab=datasets]  Troppo grandi per GitHub
+
+- **European Environmental Agency**
+  [https://www.eea.europa.eu/en/datahub/datahubitem-view/82700fbd-2953-467b-be0a-78a520c3a7ef ]
+  
+-**European Drought Observatory**
+[https://drought.emergency.copernicus.eu/]
+
+
 ## 🛠 How to Use the Code
 
