@@ -4,9 +4,9 @@ This repository supports the SCARFACE project, which focuses on evaluating carbo
 
 ## 📁 Repository Structure
 
-- `Animals/`: Contains animal population and breeding data at the municipal level.
-- `CORINE Land Cover 2018/`: Contains additional data and documentation about livestock farming and breeding facilities.
-- `EEA/`: Aggregated counts of animals by category or location.
+- `Animals/`: Contains animal population and breeding data at the municipal level. Original and processed data are provided at yearly frequency. 
+- `CORINE Land Cover 2018/`: . The dataset land cover as 100 m raster data of 2018 reference year.   .
+- `EEA/`  Aggiungi risoluzione spaziale e temporale.:  
 - `ElevationData/`: Includes elevation models and altitude-related data.
 - `European Drought Observatory/`: Contains morphometric indicators (e.g., slope, roughness) and geographic information from ISTAT.
 - `LUCAS/`: Restructured contents from earlier folder arrangements.
