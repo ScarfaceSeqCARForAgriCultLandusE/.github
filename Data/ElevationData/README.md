@@ -4,7 +4,7 @@
 
 For the purpose of providing a statistical description of the geographical characteristics of the territory, Istat disseminates analyses based on territorial bases and the digital elevation model (DEM) of the main territorial units relevant to official statistics
 
-## Structure Pigs
+## Structure 
 
 - **Rows**: 895 obs
 - **Columns**: 27 columns
@@ -31,9 +31,8 @@ For the purpose of providing a statistical description of the geographical chara
 ## Notes
 
 - The datasets are provided given rds and csv formats.
-- The additional lengths in rows is due to the presence of some more municipalities.
-
-
+- Metadata folder contains an R script for processing the data original and provide the below plot.
+    
 ### Example plot
 
 ![Alt text](Rplot.png)
