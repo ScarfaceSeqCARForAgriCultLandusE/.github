@@ -4,17 +4,28 @@ This repository supports the SCARFACE project, which focuses on evaluating carbo
 
 ## 📁 Repository Structure
 
-- `Animals/`: Contains animal population and breeding data at the municipal level. Original and processed data are provided at yearly frequency. 
-- `CORINE Land Cover 2018/`: . The dataset land cover as 100 m raster data of 2018 reference year.   .
-- `EEA/` : Contains spatio-temporal data of the concentration of PM10 and PM2.5 of yearly averages over a grid of 0.1x0.1.
-- `EDGAR Emissions/`: Contains spatio-temporal datasets from the Emissions Database for Global Atmospheric Research (EDGAR) of European Commission. Edgar provides data on annual emissions of greenhouse gasses and pollutants on a regular 0.1 x 0.1 grid worldwide.  Emission refer to either total human activities and sector specific activity agricolture and livestock.  
-- `ElevationData/`: Includes elevation models and altitude-related data.
--  `Metereology`/ : Data from ECMWF, on a regular 0.1 x 0.1 grid.
-- `LAU PO Valley Metadata/`: Meta data of the municipality.
-- `European Drought Observatory/`: Data from the compernicus, big and perhaps not relevant.
-- `LUCAS/`: Restructured contents from earlier folder arrangements.
-- `MorfometricData`:  Contains morphometric indicators (e.g., slope, roughness) and geographic information from ISTAT (to be organised)
-- `Socio-Economic-Indicators`: Socio-economic indicators organised by municipality levels. 
+- **`Animals/`**: Contains municipal-level data on animal populations and breeding. Includes both raw and processed datasets at annual resolution.
+
+- **`CORINE Land Cover 2018/`**: Provides 2018 land cover data as 100 m resolution raster layers.
+
+- **`EEA/`**: Includes spatio-temporal data on PM10 and PM2.5 concentrations, presented as yearly averages on a 0.1° × 0.1° grid, covering the period 2011–2025.
+
+- **`EDGAR Emissions/`**: Contains annual emissions data from the Emissions Database for Global Atmospheric Research (EDGAR) by the European Commission. Data is available on a global 0.1° × 0.1° grid and includes both total and sector-specific (e.g., agriculture, livestock) human activity emissions.
+
+- **`ElevationData/`**: Digital elevation models and related topographic datasets.
+
+- **`Meteorology/`**: Meteorological data sourced from ECMWF, structured on a 0.1° × 0.1° grid. (Temporal coverage to be confirmed.)
+
+- **`LAU PO Valley Metadata/`**: Metadata for municipalities within the Po Valley.
+
+- **`European Drought Observatory/`**: Large-scale datasets from the Copernicus program. May not be directly relevant to the current scope.
+
+- **`LUCAS/`**: Consolidated and restructured datasets originally from separate folders.
+
+- **`MorfometricData/`**: Contains geographic and morphometric indicators (e.g., slope, roughness) from ISTAT. (Further organization needed.)
+
+- **`Socio-Economic-Indicators/`**: Socio-economic statistics at the municipality level, covering the years 2014–2021.
+
 
 
 ## 🔗 Data Sources
