@@ -6,15 +6,15 @@ This repository supports the SCARFACE project, which focuses on evaluating carbo
 
 - `Animals/`: Contains animal population and breeding data at the municipal level. Original and processed data are provided at yearly frequency. 
 - `CORINE Land Cover 2018/`: . The dataset land cover as 100 m raster data of 2018 reference year.   .
-- `EEA/`  Aggiungi risoluzione spaziale e temporale.:
+- `EEA/` : Contains spatio-temporal data of the concentration of PM10 and PM2.5 of yearly averages over a grid of 0.1x0.1.
 - `EDGAR Emissions/`: Contains spatio-temporal datasets from the Emissions Database for Global Atmospheric Research (EDGAR) of European Commission. Edgar provides data on annual emissions of greenhouse gasses and pollutants on a regular 0.1 x 0.1 grid worldwide.  Emission refer to either total human activities and sector specific activity agricolture and livestock.  
 - `ElevationData/`: Includes elevation models and altitude-related data.
 -  `Metereology`/ : Data from ECMWF, on a regular 0.1 x 0.1 grid.
 - `LAU PO Valley Metadata/`: Meta data of the municipality.
-- `European Drought Observatory/`: Contains morphometric indicators (e.g., slope, roughness) and geographic information from ISTAT (to be organised)
+- `European Drought Observatory/`: Data from the compernicus, big and perhaps not relevant.
 - `LUCAS/`: Restructured contents from earlier folder arrangements.
-- `MorfometricData`: Visual representation of altitude data.
-- `Socio-Economic-Indicators`: Spreadsheet with altitude values by municipality.
+- `MorfometricData`:  Contains morphometric indicators (e.g., slope, roughness) and geographic information from ISTAT (to be organised)
+- `Socio-Economic-Indicators`: Socio-economic indicators organised by municipality levels. 
 
 
 ## 🔗 Data Sources
@@ -23,6 +23,9 @@ The data included in this repository comes from trusted institutional sources:
 
 - **ISTAT** – Statistica Sperimentale e Indicatori Morfometrici  
   [https://www.istat.it/classificazione/principali-statistiche-geografiche-sui-comuni/](https://www.istat.it/classificazione/principali-statistiche-geografiche-sui-comuni/)
+
+- **ISTAT** - A Misura di Comune Indici Socio-Economici
+ [https://www.istat.it/statistica-sperimentale/aggiornamento-degli-indicatori-del-sistema-informativo-a-misura-di-comune/]
   
 - **LUCAS – Land Use/Cover Area Frame Survey (Eurostat)**  
   [https://ec.europa.eu/eurostat/statistics-explained/index.php?title=LUCAS_-_Land_use_and_land_cover_survey](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=LUCAS_-_Land_use_and_land_cover_survey)
