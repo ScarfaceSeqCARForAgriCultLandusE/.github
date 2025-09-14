@@ -18,8 +18,6 @@ This repository supports the SCARFACE project, which focuses on evaluating carbo
 
 - **`LAU PO Valley Metadata/`**: Metadata for municipalities within the Po Valley.
 
-- **`European Drought Observatory/`**: Large-scale datasets from the Copernicus program. May not be directly relevant to the current scope.
-
 - **`LUCAS/`**: Consolidated and restructured datasets originally from separate folders.
 
 - **`MorfometricData/`**: Contains geographic and morphometric indicators (e.g., slope, roughness) from ISTAT. (Further organization needed.)
