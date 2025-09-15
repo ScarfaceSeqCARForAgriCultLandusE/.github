@@ -8,7 +8,7 @@ This repository supports the SCARFACE project, which focuses on evaluating carbo
 
 - **`CORINE Land Cover 2018/`**: Provides 2018 land cover data as 100 m resolution raster layers.
 
-- - **`CREA SURVEY/`**: collects yearly information on agricultural activities in Italy.
+- **`CREA SURVEY/`**: collects yearly information on agricultural activities in Italy.
 
 - **`EEA/`**: Includes spatio-temporal data on PM10 and PM2.5 concentrations, presented as yearly averages on a 0.1° × 0.1° grid, covering the period 2011–2025.
 
