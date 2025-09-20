@@ -4,27 +4,26 @@ This repository supports the SCARFACE project, which focuses on evaluating carbo
 
 ## 📁 Repository Structure
 
-- **`Animals/`**: Contains municipal-level data on animal populations and breeding. Includes both raw and processed datasets at annual resolution.
+- **`Scarface dataset/`**:  Contains the Scarface dataset.
 
-- **`CORINE Land Cover 2018/`**: Provides 2018 land cover data as 100 m resolution raster layers.
+- **`Animals/`**: Contains METADATA municipal-level data on animal populations and breeding. Includes both raw and processed datasets at annual resolution.
 
-- **`CREA SURVEY/`**: collects yearly information on agricultural activities in Italy.
+- **`CORINE Land Cover 2018/`**: Place holder only.
 
-- **`EEA/`**: Includes spatio-temporal data on PM10 and PM2.5 concentrations, presented as yearly averages on a 0.1° × 0.1° grid, covering the period 2011–2025.
+- **`CREA SURVEY/`**: METADATA collects yearly information on agricultural activities in Italy.
 
-- **`EDGAR Emissions/`**: Contains annual emissions data from the Emissions Database for Global Atmospheric Research (EDGAR) by the European Commission. Data is available on a global 0.1° × 0.1° grid and includes both total and sector-specific (e.g., agriculture, livestock) human activity emissions.
+- **`EEA/`**: Includes METADATA spatio-temporal data on PM10 and PM2.5 concentrations, presented as yearly averages on a 0.1° × 0.1° grid, covering the period 2011–2025.
 
-- **`ElevationData/`**: Digital elevation models and related topographic datasets.
+- **`EDGAR Emissions/`**: Contains METADATA annual emissions data from the Emissions Database for Global Atmospheric Research (EDGAR) by the European Commission. Data is available on a global 0.1° × 0.1° grid and includes both total and sector-specific (e.g., agriculture, livestock) human activity emissions.
 
-- **`Meteorology/`**: Meteorological data sourced from ECMWF, structured on a 0.1° × 0.1° grid. (Temporal coverage to be confirmed.)
 
-- **`LAU PO Valley Metadata/`**: Metadata for municipalities within the Po Valley.
+- **`Meteorology/`**: Meteorological METADATA sourced from ECMWF, structured on a 0.1° × 0.1° grid. (Temporal coverage to be confirmed.)
 
-- **`LUCAS/`**: Consolidated and restructured datasets originally from separate folders.
+- **`LAU PO Valley Metadata/`**: METADATA for municipalities within the Po Valley.
 
-- **`MorfometricData/`**: Contains geographic and morphometric indicators (e.g., slope, roughness) from ISTAT. (Further organization needed.)
+- **`MorfometricData/`**: Contains METADATA geographic and morphometric indicators (e.g., slope, roughness) from ISTAT. (Further organization needed.)
 
-- **`Socio-Economic-Indicators/`**: Socio-economic statistics at the municipality level, covering the years 2014–2021.
+- **`Socio-Economic-Indicators/`**: METADATA Socio-economic statistics at the municipality level, covering the years 2014–2021.
 
 
 
