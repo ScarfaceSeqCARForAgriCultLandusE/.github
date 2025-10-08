@@ -24,9 +24,6 @@ This GitHub repository contains several outputs developed by the researchers inv
 * Technical documentation regarding the analytical procedure and the assumptions adopted to build the dataset  
 
 
-## Scientific reference and further readings (October 2025):
-1. Greenpeace Italia, Spagna e Germania & Sbilanciamoci.info. [Arming Europe: military expenditure and their economic impact in Germany, Italy and Spain](https://www.greenpeace.org/italy/rapporto/19382/leuropa-si-arma/). Nov.2023
-2. Stamegna, M., Bonaiuti, C., Maranzano, P., & Pianta, M. (2024) [The economic impact of arms spending in Germany, Italy, and Spain](https://www.degruyter.com/document/doi/10.1515/peps-2024-0019/html). Peace Economics, Peace Science and Public Policy, DOI: 10.1515/peps-2024-0019
-3. D'Aprile, F., Koehler, M., Maranzano, P., Pianta, M. & Strazzari, F. (2025) [Europe's military programmes: strategies, costs and trade-offs](https://ideas.repec.org/p/ssa/lemwps/2025-25.html). LEM Working Paper Series No. 2025/25, 10.57838/sssa/r1fr-jd35
+
 
 
